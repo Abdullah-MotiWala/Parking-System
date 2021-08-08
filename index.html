@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="popUp plotsFull">
+        <div class="popUpContent fullPop">
+            <img src="./Images/full.jpg" alt="Plotes full" class="plotesFull">
+            <h3>All plot are currently in use</h3>
+            <button class="fullHidden">OK</button>
+        </div>
+    </div>
+    <div class="popUp wrongIdPopUp">
+        <div class="popUpContent wrongIdCont">
+            <img src="./Images/idError.jpg" alt="idNotFound" class="idError">
+            <h3>Oops Wrong Id</h3>
+            <button class="idHidden">OK</button>
+        </div>
+    </div>
+    <div class="popForEmptyPlot popUp">
+        <div class="popUpContent popUpEmptyContent"></div>
+    </div>
+    <div class="popForCheckOut popUp">
+        <div class="popCheckOutContent popUpContent"></div>
+    </div>
+
+    <button class="btnForEmptyPlot">Available Plots</button>
+    <div class="buttonPlace">
+        <button class="checkIn">Check In</button>
+        <button class="checkOut">Check Out</button>
+    </div>
+    <div class="plotsWrap">
+        <div class="plots" id="plot1">
+            <div class="upperPortionOf">
+                <i class="fa fa-car car1 fa-5x"></i>
+                <p class="carNo"></p>
+            </div>
+            <p class="text plot1">Plot 1</p>
+        </div>
+
+        <div class="plots" id="plot2">
+            <div class="upperPortionOf">
+                <i class="fa fa-car car2 fa-5x"></i>
+                <p class="carNo"></p>
+            </div>
+            <p class="text plot2">Plot 2</p>
+        </div>
+
+        <div class="plots" id="plot4">
+            <div class="upperPortionOf">
+                <i class="fa fa-car fa-5x"></i>
+                <p class="carNo"></p>
+            </div>
+            <p class="text plot3">Plot 3</p>
+        </div>
+
+        <div class="plots" id="plot4">
+            <div class="upperPortionOf">
+                <i class="fa fa-car fa-5x"></i>
+                <p class="carNo"></p>
+            </div>
+            <p class="text plot4">Plot 4</p>
+        </div>
+
+        <div class="plots" id="plot5">
+            <div class="upperPortionOf">
+                <i class="fa fa-car fa-5x"></i>
+                <p class="carNo"></p>
+            </div>
+            <p class="text plot5">Plot 5</p>
+        </div>
+
+        <div class="plots" id="plot6">
+            <div class="upperPortionOf">
+                <i class="fa fa-car fa-5x"></i>
+                <p class="carNo"></p>
+            </div>
+            <p class="text plot6">Plot 6</p>
+        </div>
+
+        <div class="plots" id="plot7">
+            <div class="upperPortionOf">
+                <i class="fa fa-car fa-5x"></i>
+                <p class="carNo"></p>
+            </div>
+            <p class="text plot7">Plot 7</p>
+        </div>
+
+        <div class="plots" id="plot8">
+            <div class="upperPortionOf">
+                <i class="fa fa-car fa-5x"></i>
+                <p class="carNo"></p>
+            </div>
+            <p class="text plot8">Plot 8</p>
+        </div>
+
+        <div class="plots" id="plot9">
+            <div class="upperPortionOf">
+                <i class="fa fa-car fa-5x"></i>
+                <p class="carNo"></p>
+            </div>
+            <p class="text plot9">Plot 9</p>
+        </div>
+
+        <div class="plots" id="plot10">
+            <div class="upperPortionOf">
+                <i class="fa fa-car fa-5x"></i>
+                <p class="carNo"></p>
+            </div>
+            <p class="text plot10">Plot 10</p>
+        </div>
+    </div>
+
+    <script src="https://use.fontawesome.com/a335017f5a.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

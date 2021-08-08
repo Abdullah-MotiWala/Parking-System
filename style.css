@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.idError, .plotesFull{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+}
+.fullPop h3, .wrongIdCont h3{
+    color: red;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 100px;
+}
+
+.wrongIdCont h3 {
+    color: #e4640b;
+    font-size: 2rem;
+}
+
+.wrongIdCont,.fullPop{
+    position: relative;
+    overflow: hidden;
+}
+
+.wrongIdCont button, .fullPop button {
+    background-color: #fcb82f;
+    color: #fff;
+    font-size: 2rem;
+    width: 180px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.fullPop button {
+    z-index: 1;
+    border: 1px solid #fff;
+    bottom: 0px;
+}
+.wrongIdCont button:hover , .fullPop button:hover {
+    background-color: #fbaf17;
+}
+
+div.popUp {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    font-size: 20px;
+}
+
+div.popUpContent {
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
+    margin: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popUpContent p:hover {
+    cursor: pointer;
+    font-weight: 500px;
+    text-decoration: underline;
+    color: brown;
+}
+
+button.btnForEmptyPlot {
+    z-index: 4;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: #ff0f0f solid 2px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: #fff;
+}
+
+button.btnForEmptyPlot:hover {
+    background-color: whitesmoke;
+}
+.checkIn{
+    visibility: hidden;
+}
+button.checkOut {
+    z-index: 4;
+}
+
+div.buttonPlace {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff0f0f;
+}
+
+button {
+    margin: 20px;
+    width: 100px;
+    height: 76px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+    color: #ff0f0f;
+    font-weight: bold;
+}
+
+button:hover, div.plots:hover {
+    cursor: pointer;
+}
+
+div.plotsWrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.plots {
+    height: 400px;
+    width: 250px;
+    border: #ff0f0f solid 3px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    box-shadow: #000 1px 1px 10px 1px;
+}
+
+div.plots:hover {
+    background-color: #f5f5f5;
+    border: #ff0038 solid 3px;
+}
+
+div.upperPortionOf {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+p.text {
+    font-weight: bold;
+    letter-spacing: 5px;
+    width: 100%;
+    height: 20%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 80px;
+    color: blue;
+}
+
+.fa-car {
+    color: #ffeb00;
+    visibility: hidden;
+}
+
+.carenrty {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.5)
+}
+
+.details {
+    background-color: red;
+    color: #fff;
+    height: 500px;
+    width: 40%;
+    display: flex;
+    margin: auto;
+    box-shadow: 10px 10px 10px 10px pink;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.details input {
+    background-color: #ffeb00;
+    height: 35px;
+    width: 50%;
+    margin: 20px;
+    border-radius: 125px;
+    border: solid 1px #fff;
+    padding: 10px;
+    font-size: 1.25rem;
+    
+}
+.details input:focus{
+    outline: none;
+}
+
+/* .fa-cars {
+    color: #ffeb00;
+    visibility: visible;
+} */
+
+.heading {
+    text-align: center;
+    font-size: 31px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    color: red;
+    font-weight: 600;
+}
