@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 
 </head>
+
 <body>
 
-<p class="heading">
-    Car Details
-</p>
-
-<div class="details">
-    <label for="carname"> Car Name
-        <input placeholder="   Enter Car Name" id="carname" type="text">
-    </label>
-    <label for="carnum"> Car Number
-        <input placeholder="  Enter Car Number" id="carnum" type="text">
-    </label>
-    <label for="username"> Username
-        <input placeholder="   Enter Car Username" id="username" type="text">
-    </label>
-    <label for="userID"> UserID
-        <input placeholder="   Enter Car UserID" id="userID" type="text">
-    </label>
- 
-
-    <input onclick="park()" type="button" value="Park It">
-</div>
+    <p class="heading">
+        Car Details
+    </p>
+    <form action="get">
+        <div class="details">
+            <table>
+                <tr>
+                    <td>
+                        <label for="carColor"> Car Name
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" id="carname" placeholder="Enter Car Company Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="carnum"> Car Number
+                        </label>
+                    </td>
+                    <td>
+                        <input placeholder="Enter Car Number" id="carnum" type="number" maxlength="4" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="username"> Username
+                        </label>
+                    </td>
+                    <td>
+                        <input placeholder="Enter Car Username" id="username" type="text">
+                    </td>
+                </tr>
+                </td>
+                <tr>
+                    <td>
+                        <label for="userID"> UserID
+                        </label>
+                    </td>
+                    <td>
+                        <input placeholder="Enter Car UserID" id="userID" type="text">
+                    </td>
+                </tr>
+            </table>
+            <input onclick="park()" type="button" value="Park It">
+        </div>
+    </form>
 
 
 
@@ -39,4 +67,5 @@
     <script src="https://use.fontawesome.com/a335017f5a.js"></script>
     <script src="app2.js"></script>
 </body>
+
 </html>
