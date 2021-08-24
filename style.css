@@ -108,6 +108,12 @@ button.btnForEmptyPlot {
 button.btnForEmptyPlot:hover {
   background-color: whitesmoke;
 }
+.buttonPlace h1{
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 70px;
+    text-transform:uppercase;
+}
 .checkIn {
   visibility: hidden;
 }
@@ -247,4 +253,7 @@ select:focus{
   word-spacing: 8px;
   color: #0c7489;
   font-weight: 600;
+}
+.parkBtn:hover{
+    cursor: pointer;
 }
